@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:controller="acidsore.WindowController"
+      xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <HBox fx:id="tables" VBox.vgrow="ALWAYS">
+        <TableView fx:id="UserContent" HBox.hgrow="ALWAYS" >
+            <columns>
+                <TableColumn  fx:id="FileNames" text = "computer" />
+            </columns>
+        </TableView>
+        <TableView fx:id="ServerContent" HBox.hgrow="ALWAYS"  >
+             <columns>
+                <TableColumn  fx:id="StorageFileNames" text = "storage" />
+             </columns>
+        </TableView>
+    </HBox>
+    <HBox fx:id="Buttons" VBox.vgrow="ALWAYS" >
+        <Button fx:id="send" onAction="#send" HBox.hgrow="ALWAYS"  maxWidth="Infinity" text="send"/>
+        <Button fx:id="deleteU" onAction="#deleteU" HBox.hgrow="ALWAYS" maxWidth="Infinity" text="delete"/>
+        <Button fx:id="download" onAction="#download" HBox.hgrow="ALWAYS" maxWidth="Infinity"  text="download"/>
+        <Button fx:id="deleteS" onAction="#deleteS" HBox.hgrow="ALWAYS" maxWidth="Infinity" text="delete"/>
+    </HBox>
+</VBox>
